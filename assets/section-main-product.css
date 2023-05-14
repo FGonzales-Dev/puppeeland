@@ -295,7 +295,7 @@ fieldset.product-form__input .form__label {
 
 @media screen and (forced-colors: active) {
   .product-form__submit[aria-disabled="true"] {
-    color: Window;
+    color: blue;
   }
 }
 
