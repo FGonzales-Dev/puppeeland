@@ -1,0 +1,130 @@
+{%- capture tabs %}
+  {%- capture content %}<ul>
+<li><strong>Save $30 when you spend $300!</strong><br />Promo Code: SHOP300<br /><br /></li>
+<li><strong>Save $50 when you spend $400!</strong><br />Promo Code: SHOP400<br /><br /></li>
+<li><strong>Save $60 when you spend $500!</strong><br />Promo Code: SHOP500</li>
+</ul>{% endcapture -%}
+  64737^^Promos^^{{ content | replace: '~', '&#126;' | replace: '^', '&#94;' }}^^0||||^^^^^^0^^~~
+  {%- capture content %}<p><strong>Can I cancel or edit my order?<br /></strong><br />Since all orders will be processed immediately, please beware we cannot cancel or edit your order after your order is submitted. Please contact our Customer Service team immediately at&nbsp;<a href="https://nl-store101.myshopify.com/service@puppeeland.com" aria-describedby="a11y-external-message">service@puppeeland.com</a>&nbsp;should you have any urgent requests.<br /><br /></p>
+<p><strong>Damaged or Incorrect Order</strong></p>
+<p>At Puppeeland, we always try our best to ensure product quality and order accuracy. If you receive a damaged, faulty or incorrect product, don't worry! Simply take a photo and send it to us at service@puppeeland.com and we will send you a replacement order or store credits for future use. Unfortunately, we cannot accept exchanges or refunds for products that fail to meet your expectations if they're not defective.&nbsp;</p>
+<p><strong>Exceptions / non-returnable items</strong></p>
+<p>Due to hygiene concerns, we are sorry that the following product types cannot be returned due to wrong sizing. Therefore, please make sure you double check the size chart before your order and size up 1-2 sizes as our hooman apparel is usually Asian size.&nbsp;</p>
+<ul>
+<li>Hooman Clothing &amp; Accessories</li>
+<li>Pet Clothing &amp; Accessories</li>
+<li>Bedding Sets (Including Duvet Covers)</li>
+</ul>
+<p>All custom made and personalised products are also non-returnable.</p>
+<p><strong>Order Not Received</strong><br /><br />Your order will come with a tracking number. Our after sales team will keep monitoring the shipping status and notify you if the delivery is taking longer than usual. If you still haven't received your product after 6 weeks of ordering and the shipment status shows that your order has not yet arrived in the country of destination, we will send you a replacement order for free.&nbsp;</p>{% endcapture -%}
+  64736^^Returns^^{{ content | replace: '~', '&#126;' | replace: '^', '&#94;' }}^^0||||^^^^^^0^^~~
+  {%- capture content %}<p><strong>We ship worldwide!</strong><br /><br /><strong>Shipping Fee</strong><br /><br />We now provide free&nbsp;worldwide shipping worldwide.</p>
+<p>If you are based in the following countries, we suggest that you <a href="https://puppeeland.com/pages/contact-us">contact us</a> first to confirm the shipping fee as we may not be able to provide $4.95 flat fee as well as free worldwide shipping for these countries.</p>
+<ul>
+<li>Argentina</li>
+<li>Brazil</li>
+<li>Chile</li>
+<li>Colombia</li>
+<li>Cyprus</li>
+<li>Greenland</li>
+<li>Guam</li>
+<li>Kuwait</li>
+<li>Jordan</li>
+<li>Turkey</li>
+<li>Philippines</li>
+<li>Puerto Rico</li>
+<li>Venezuela</li>
+<li>Ukraine</li>
+<li>South Africa</li>
+</ul>
+<p><strong>Shipment Processing Time and Delivery Time</strong></p>
+<p>All orders will be processed immediately&nbsp;and shipped within&nbsp;<strong>7-10 business days</strong>.&nbsp;</p>
+<p>Estimated delivery time to North America, Asia, Europe and Oceania is between&nbsp;<strong>2-3 weeks</strong>. We will send you the tracking number once your order is shipped.</p>
+<p>If we are experiencing a high volume of orders, shipments may be delayed by a few days. Please allow additional days in transit for delivery. If there will be a significant delay in shipment of your order, we will contact you via email.&nbsp;</p>
+<p>Digital product orders will be&nbsp;processed and delivered&nbsp;to the recipient via email within 1-2 business days.</p>
+<p><strong>Import Duties and Taxes</strong></p>
+<p>Import duties, taxes, and charges are not included in the item price or shipping cost. These charges vary from one country to another and are the buyer's responsibility.&nbsp;</p>{% endcapture -%}
+  64724^^Shipping^^{{ content | replace: '~', '&#126;' | replace: '^', '&#94;' }}^^0||||^^^^^^0^^~~
+{%- endcapture -%}
+{%- assign tabs_array = tabs | strip | split: '~~' -%}
+{%- assign p_id_str = product.id | downcase -%}
+<!-- begin station shared tab data -->
+{%- for item in tabs_array -%}
+  {%- assign tab = item | split: '^^' -%}
+  {%- assign hndl = tab[1] | replace: '&amp;', '' | handleize -%}
+  {%- capture tab_output -%}
+    <div id="station-tabs-data-{{ tab[0] }}" class="station-tabs-data-item" style="display:none;" data-position="{{ tab[5] | default: -1 }}">
+      <a id="st-link-{{ hndl }}" class="station-tabs-link" href="#{{ hndl }}"><span>{{ tab[1] }}</span></a>
+      <div id="st-{{ hndl }}" class="station-tabs-content">
+        <div class="station-tabs-content-inner">{{ tab[2] }}</div>
+      </div>
+    </div>
+  {%- endcapture -%}
+  {%- assign asn = tab[3] | split: '|' -%}
+  {%- assign p_ids = asn[0] | split: ',' -%}
+  {%- assign e_ids = tab[4] | split: ',' -%}
+  {%- unless tabs_order contains tab[0] %}{% continue %}{% endunless -%}
+  {%- if e_ids contains p_id_str %}{% continue %}{% endif -%}
+  {%- if tab[7] != blank%}
+    {%- assign t_lcl = tab[7] | downcase -%}
+    {%- assign s_lcl = request.locale.iso_code | downcase -%}
+    {%- if t_lcl != s_lcl %}{% continue %}{% endif -%}
+  {%- endif -%}
+  {%- if asn[0] == '0' or asn[1] == '0' -%} 
+    {{ tab_output }}{% continue -%}
+  {%- endif -%}
+  {%- assign col_ids = asn[1] | split: ',' -%}
+  {%- assign tags = asn[2] | split: ',' -%}
+  {%- assign tps = asn[3] | split: ',' -%}
+  {%- assign vndr = asn[4] | split: ',' -%}
+  {%- if tab[6] == '1' %}{% assign all = true %}{% else %}{% assign all = false %}{% endif -%}
+  {%- if asn[0] != blank -%}
+    {%- assign all = false -%}
+    {%- if p_ids contains p_id_str -%}
+      {{ tab_output }}{% continue -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- if tps.size > 1 or vndr.size > 1 %}{% assign all = false %}{% endif -%}
+  {%- assign cncl = false -%}
+  {%- if col_ids.size > 0 -%}
+    {%- assign cols = product.collections | map: 'id' | downcase -%}
+    {%- for c in col_ids -%}
+      {%- if all -%}
+        {%- unless cols contains c %}
+          {%- assign cncl = true %}{% break -%}
+        {%- endunless -%}
+      {%- elsif cols contains c -%}
+        {{ tab_output }}{% assign cncl = true %}{% break -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if cncl %}{% continue %}{% endif -%}
+  {%- endif -%}
+  {%- if tags.size > 0 -%}
+    {%- for t in tags -%}
+      {%- if all -%}
+        {%- unless product.tags contains t -%}
+          {%- assign cncl = true %}{% break -%}
+        {%- endunless -%}
+      {%- elsif product.tags contains t %}
+        {{ tab_output }}{% assign cncl = true %}{% break -%}
+      {%- endif - %}
+    {%- endfor -%}
+    {%- if cncl %}{% continue %}{% endif -%}
+  {%- endif -%}
+  {%- if tps.size > 0 -%}
+    {%- if all and tps[0] != product.type -%}
+      {%- continue -%}
+    {%- elsif all == false and tps contains product.type %}
+      {{ tab_output }}{% continue -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- if vndr.size > 0 -%}
+    {%- if all and vndr[0] != product.vendor -%}
+      {%- continue -%}
+    {%- elsif all == false and vndr contains product.vendor -%}
+      {{ tab_output }}{% continue -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- if all %}{{ tab_output }}{% endif -%}
+{%- endfor -%}
+<!-- end station shared tab data -->
