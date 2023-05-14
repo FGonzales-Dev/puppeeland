@@ -291,11 +291,12 @@ fieldset.product-form__input .form__label {
 .product-form__submit[disabled] + .shopify-payment-button .shopify-payment-button__button[disabled] {
   cursor: not-allowed;
   opacity: 0.5;
+  color: aqua;
 }
 
 @media screen and (forced-colors: active) {
   .product-form__submit[aria-disabled="true"] {
-    color: blue;
+    color: red;
   }
 }
 
