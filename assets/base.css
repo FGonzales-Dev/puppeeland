@@ -1339,7 +1339,6 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .shopify-payment-button__button--branded {
-  color: red;
   z-index: auto;
 }
 
