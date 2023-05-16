@@ -282,6 +282,10 @@ fieldset.product-form__input .form__label {
   margin-bottom: 1rem;
 }
 
+.shopify-cleanslate .h7OYsWHrW5495r9beh2n {
+  background-color: black !important;
+}
+
 .no-js .product-form__submit.button--secondary {
   --color-button: var(--color-base-accent-1);
   --color-button-text: var(--color-base-solid-button-labels);
