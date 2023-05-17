@@ -286,10 +286,13 @@ fieldset.product-form__input .form__label {
   background-color: black !important;
 }
 
-
-button.shopify-payment-button__button::after {
-  content: 'JETZT ZUR KASSE';
-}
+.shopify-cleanslate .h7OYsWHrW5495r9beh2n span{
+  display:none;
+ }
+ 
+ .shopify-cleanslate .h7OYsWHrW5495r9beh2n:after{
+  content: "wew";   
+ }
 
 .shopify-cleanslate .h7OYsWHrW5495r9beh2n .ElVMgDjOgshGFMIvg3se {
 
