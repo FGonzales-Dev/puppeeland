@@ -287,8 +287,8 @@ fieldset.product-form__input .form__label {
 }
 
 
-.shopify-cleanslate .h7OYsWHrW5495r9beh2n .Xrk_DudB6JJ3t2Kh2_cU {
-  content: 'Buy Now';
+button.shopify-payment-button__button::after {
+  content: 'JETZT ZUR KASSE';
 }
 
 .shopify-cleanslate .h7OYsWHrW5495r9beh2n .ElVMgDjOgshGFMIvg3se {
