@@ -277,12 +277,11 @@ fieldset.product-form__input .form__label {
 }
 
 .product-form__submit {
-  color: black;
+  color: red;
   background-color: #f4c247;
   margin-bottom: 1rem;
   outline: 0 !important;
-  background: #f2a842 !important; 
-  border-color:#f2a842 !important; 
+  
 }
 
 .shopify-cleanslate .h7OYsWHrW5495r9beh2n {
