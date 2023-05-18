@@ -283,7 +283,12 @@ fieldset.product-form__input .form__label {
 }
 
 .shopify-cleanslate .h7OYsWHrW5495r9beh2n {
-  background-color: black !important;
+  background-color: #f2a842 !important;
+  outline: 0 !important;
+}
+
+.shopify-cleanslate .h7OYsWHrW5495r9beh2n:hover {
+  background-color: #f2a842 !important;
 }
 
 .shopify-cleanslate .h7OYsWHrW5495r9beh2n span{
@@ -291,7 +296,7 @@ fieldset.product-form__input .form__label {
  }
  
  .shopify-cleanslate .h7OYsWHrW5495r9beh2n:after{
-  content: "wew";   
+  content: "Buy Now";   
  }
 
 .shopify-cleanslate .h7OYsWHrW5495r9beh2n .ElVMgDjOgshGFMIvg3se {
