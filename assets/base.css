@@ -1388,6 +1388,10 @@ button.shopify-payment-button__button--unbranded {
 .shopify-payment-button__button--unbranded:after {
   content: '';
   position: absolute;
+  top: var(--buttons-border-width);
+  right: var(--buttons-border-width);
+  bottom: var(--buttons-border-width);
+  left: var(--buttons-border-width);
   z-index: 1;
   border-radius: var(--buttons-radius);
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)),
