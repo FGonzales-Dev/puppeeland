@@ -294,12 +294,14 @@ fieldset.product-form__input .form__label {
   background-color: #f2a842 !important;
 }
 
+
+/* remove shopPay icon */
 .shopify-cleanslate .h7OYsWHrW5495r9beh2n span{
-  
   display:none;
  }
  
  .shopify-cleanslate .h7OYsWHrW5495r9beh2n:after{
+  color: black;
   content: "Buy Now";   
  }
 
