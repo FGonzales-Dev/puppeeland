@@ -284,13 +284,8 @@ fieldset.product-form__input .form__label {
 }
 
 .shopify-cleanslate .h7OYsWHrW5495r9beh2n {
-  color: red;
-  background-color: #f2a842 !important;
-  top: #f2a842 !important;
-  right: #f2a842 !important;
-  bottom: #f2a842 !important;
-  left: #f2a842 !important;
- 
+  color: black;
+  background-color: #f2a842 !important; 
 }
 
 
@@ -301,7 +296,7 @@ fieldset.product-form__input .form__label {
  }
  
  .shopify-cleanslate .h7OYsWHrW5495r9beh2n:after{
-  color: red;
+  color: black;
   content: "Buy Now";   
  }
 
