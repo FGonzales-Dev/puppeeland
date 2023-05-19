@@ -278,7 +278,7 @@ fieldset.product-form__input .form__label {
 
 .product-form__submit {
   color: black !important; 
-  background-color: green;
+  background-color: red;
   margin-bottom: 1rem;
   outline: 0 !important;
   
@@ -290,6 +290,13 @@ fieldset.product-form__input .form__label {
 }
 
 .shopify-cleanslate .DnvZqPMEvBFbBre5UuP9 {
+  background: #f2a842 !important; 
+  border-color:#f2a842 !important; 
+}
+
+
+
+.shopify-cleanslate .DnvZqPMEvBFbBre5UuP9:hover {
   background: #f2a842 !important; 
   border-color:#f2a842 !important; 
 }
