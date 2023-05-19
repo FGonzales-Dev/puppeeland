@@ -1371,7 +1371,7 @@ button.shopify-payment-button__button--unbranded {
 .shopify-payment-button__button--unbranded:before,
 .shopify-payment-button [role="button"]:before,
 .cart__dynamic-checkout-buttons [role='button']:before {
-  content: 'wew';
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
