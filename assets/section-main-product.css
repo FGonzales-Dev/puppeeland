@@ -284,15 +284,18 @@ fieldset.product-form__input .form__label {
   
 }
 
-.kqsiVA9Jf8LJAbxw8Bau .h7OYsWHrW5495r9beh2n .jjzYeefyWpPZLH9pIgyw .DnvZqPMEvBFbBre5UuP9:hover {
-  background: #f2a842 !important; 
-  border-color:#f2a842 !important; 
-}
 
-.shopify-cleanslate .h7OYsWHrW5495r9beh2n {
-  color: black;
+
+.shopify-cleanslate .h7OYsWHrW5495r9beh2n:hover{
   background-color: #f2a842 !important; 
 }
+
+
+.shopify-cleanslate .h7OYsWHrW5495r9beh2n {
+  background-color: #f2a842 !important; 
+}
+
+
 
 .shopify-cleanslate .DnvZqPMEvBFbBre5UuP9 {
   background: #f2a842 !important; 
@@ -307,6 +310,7 @@ fieldset.product-form__input .form__label {
  .shopify-cleanslate .h7OYsWHrW5495r9beh2n:after{
   color: black;
   content: "Buy Now";   
+  background-color: #f2a842 !important; 
  }
 
 .shopify-cleanslate .h7OYsWHrW5495r9beh2n .ElVMgDjOgshGFMIvg3se {
