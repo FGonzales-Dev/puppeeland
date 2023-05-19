@@ -278,39 +278,16 @@ fieldset.product-form__input .form__label {
 
 .product-form__submit {
   color: black !important; 
-  background-color: red;
+  background-color: green;
   margin-bottom: 1rem;
   outline: 0 !important;
   
 }
-.shopify-cleanslate .h7OYsWHrW5495r9beh2n:hover {
-  background:  #f2a842 !important;
-}
+
 .shopify-cleanslate .h7OYsWHrW5495r9beh2n {
   color: black;
   background-color: #f2a842 !important; 
 }
-.kqsiVA9Jf8LJAbxw8Bau .h7OYsWHrW5495r9beh2n .jjzYeefyWpPZLH9pIgyw .DnvZqPMEvBFbBre5UuP9 .size--small :hover {
-  background-color: #f2a842 !important; 
-}
-.shopify-payment-button__button--branded :hover {
-  background-color: #f2a842 !important; 
-}
-.shopify-payment-button__button--branded :focus {
-  background-color: #f2a842 !important; 
-}
-
-.shopify-cleanslate .DnvZqPMEvBFbBre5UuP9:hover {
-  background: #f2a842 !important; 
-}
-
-.shopify-cleanslate .DnvZqPMEvBFbBre5UuP9 :hover {
-  background-color: #f2a842 !important; 
-}
-.shopify-cleanslate .DnvZqPMEvBFbBre5UuP9:focus {
-  background-color: #f2a842 !important; 
-}
-
 
 .shopify-cleanslate .DnvZqPMEvBFbBre5UuP9 {
   background: #f2a842 !important; 
@@ -328,7 +305,6 @@ fieldset.product-form__input .form__label {
  }
 
 .shopify-cleanslate .h7OYsWHrW5495r9beh2n .ElVMgDjOgshGFMIvg3se {
-
   height: 0px;
   width: 0px;
  }
