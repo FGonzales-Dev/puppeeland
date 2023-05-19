@@ -278,7 +278,7 @@ fieldset.product-form__input .form__label {
 
 .product-form__submit {
   color: black !important; 
-  background-color: green;
+  background-color: red;
   margin-bottom: 1rem;
   outline: 0 !important;
   
@@ -286,7 +286,7 @@ fieldset.product-form__input .form__label {
 
 
 
-.shopify-cleanslate .h7OYsWHrW5495r9beh2n:hover{
+.shopify-cleanslate :hover{
   background-color: #f2a842 !important; 
 }
 
