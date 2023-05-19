@@ -295,6 +295,10 @@ fieldset.product-form__input .form__label {
   background-color: #f2a842 !important; 
 }
 
+.shopify-cleanslate .DnvZqPMEvBFbBre5UuP9 :hover {
+  background: #f2a842 !important; 
+  border-color:#f2a842 !important; 
+}
 
 
 .shopify-cleanslate .DnvZqPMEvBFbBre5UuP9 {
@@ -310,7 +314,6 @@ fieldset.product-form__input .form__label {
  .shopify-cleanslate .h7OYsWHrW5495r9beh2n:after{
   color: pink;
   content: "Buy Now";   
-  background: #f2a842 !important; 
  }
 
 .shopify-cleanslate .h7OYsWHrW5495r9beh2n .ElVMgDjOgshGFMIvg3se {
