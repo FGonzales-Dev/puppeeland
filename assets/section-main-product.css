@@ -277,7 +277,7 @@ fieldset.product-form__input .form__label {
 }
 
 .product-form__submit {
-  color: red !important; 
+  color: green !important; 
   background-color: #f4c247;
   margin-bottom: 1rem;
   outline: 0 !important;
