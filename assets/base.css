@@ -223,6 +223,10 @@
 
 /* base */
 
+._1fragem15{
+  background-color: red;
+}
+
 .no-js:not(html) {
   display: none !important;
 }
@@ -3148,7 +3152,3 @@ details-disclosure > details {
   }
 }
 
-
-._1fragem15{
-  background-color: red;
-}
