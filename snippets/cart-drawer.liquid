@@ -374,11 +374,11 @@
         <!-- Start blocks -->
         <!-- Subtotals -->
 
-        {% comment %} <div class="cart-drawer__footer" {{ block.shopify_attributes }}>
+        <div class="cart-drawer__footer" {{ block.shopify_attributes }}>
           <div class="totals" role="status">
             <h2 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h2>
             <p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p>
-          </div> {% endcomment %}
+          </div>
 
           <div>
             {%- if cart.cart_level_discount_applications.size > 0 -%}
@@ -426,7 +426,7 @@
               disabled
             {% endif %}
           >
-            {% comment %} {{ 'sections.cart.checkout' | t }} {% endcomment %}
+            {{ 'sections.cart.checkout' | t }}
           </button>
         </div>
       </div>
