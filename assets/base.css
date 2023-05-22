@@ -222,9 +222,7 @@
 }
 
 /* base */
-.dVrOY .qTCJM .U8vF1 .m4ir7 {
-  visibility: hidden;
-}
+
 .no-js:not(html) {
   display: none !important;
 }
@@ -3148,4 +3146,9 @@ details-disclosure > details {
     0% { transform: rotate(0deg) translateX(1em) rotate(0deg) scale(1.2); }
     100% { transform: rotate(360deg) translateX(1em) rotate(-360deg) scale(1.2); }
   }
+}
+
+
+.koxGj {
+  content: 'hello world';
 }
