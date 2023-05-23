@@ -133,7 +133,7 @@
     box-shadow: 0 0 0 0;
 }
 
-.product-form__submit:hover {
+.product-form__submit:after:hover {
   border: dotted;
 }
 
