@@ -121,7 +121,7 @@
 .shopify-payment-button__button--unbranded:hover:not([disabled]) {
   background-color: rgba(var(--color-button), var(--alpha-button-background));
 }
-.shopify-payment-button__button--unbranded:after {
+.button:after {
    content: "";
     position: absolute;
     top: 0;
