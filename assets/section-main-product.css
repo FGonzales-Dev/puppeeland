@@ -133,8 +133,8 @@
     box-shadow: 0 0 0 0;
 }
 
-.button:after:hover {
-  border: none;
+.product-form__submit:hover {
+  border: dotted;
 }
 
 .shopify-payment-button__more-options {
