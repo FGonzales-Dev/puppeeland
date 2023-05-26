@@ -101,7 +101,11 @@
             {{ form | payment_button }}
           {%- endif -%} 
 
-          <button type="button" value="/checkout/">Click Me!</button>
+          <form method="post" action="/cart/add">
+            <input type="hidden" name="return_to" value="/checkout/" />
+            <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+            <input type="submit" value="Buy" class="btn btn--primary buybuttonRuta btnmyodrers" />
+            </form>
         </div>
       {%- endform -%}
     </product-form>
