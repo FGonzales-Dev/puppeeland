@@ -312,7 +312,9 @@ fieldset.product-form__input .form__label {
   
 }
 
-
+.shopify-payment-button__button {
+  display: none !important;
+}
 
 .shopify-cleanslate :hover{
   background: #f2a842 !important; 
