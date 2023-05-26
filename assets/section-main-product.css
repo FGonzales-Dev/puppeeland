@@ -137,6 +137,18 @@
   box-shadow:none;
 }
 
+
+.shopify-payment-button__more-options {
+  background: red;
+  margin: 1.6rem 0 1rem;
+  font-size: 1.2rem;
+  line-height: calc(1 + .5 / var(--font-body-scale));
+  letter-spacing: .05rem;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  min-height: calc(4.5rem + var(--buttons-border-width) * 2);
+}
+
 .shopify-payment-button__more-options {
   margin: 1.6rem 0 1rem;
   font-size: 1.2rem;
