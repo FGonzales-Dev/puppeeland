@@ -137,7 +137,10 @@
   box-shadow:none;
 }
 
-
+.shopify-payment-button .shopify-payment-button__more-options {
+  display: none;
+  }
+  
 .shopify-payment-button__more-options {
   background: red;
   margin: 1.6rem 0 1rem;
