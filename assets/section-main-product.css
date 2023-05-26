@@ -317,9 +317,11 @@ fieldset.product-form__input .form__label {
 }
 
 
-.shopify-payment-button__more-options .BUz42FHpSPncCPJ4Pr_f:after {
+.shopify-payment-button__more-options .BUz42FHpSPncCPJ4Pr_f {
   content: "World";
+  text-decoration: none;
 }
+
 .shopify-cleanslate :hover{
   background: #f2a842 !important; 
 }
