@@ -97,9 +97,11 @@
               </svg>
             </div>
           </button>
-          {%- if show_dynamic_checkout -%}
+          {% comment %} {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
-          {%- endif -%}
+          {%- endif -%} {% endcomment %}
+
+          <button type="button" value="/checkout/">Click Me!</button>
         </div>
       {%- endform -%}
     </product-form>
