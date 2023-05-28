@@ -103,22 +103,20 @@
           
 
 
-          <button >
-            {{ 'sections.cart.checkout' | t }}
-          </button>
-
-          <div class="cart-notification__links">
-          
-            <form action="{{ routes.cart_url }}" method="post" id="cart-notification-form">
-              <button class="button button--primary button--full-width" name="checkout">
-                {{ 'sections.cart.checkout' | t }}
-                
-              </button>
-            </form>
-          </div>
-
+        
+        
         </div>
       {%- endform -%}
+      <div class="cart-notification__links">
+          
+        <form action="{{ routes.cart_url }}" method="post" id="cart-notification-form">
+          <button class="button button--primary button--full-width" name="checkout">
+            {{ 'sections.cart.checkout' | t }}
+            
+          </button>
+        </form>
+      </div>
+
     </product-form>
   {%- else -%}
     <div class="product-form">
