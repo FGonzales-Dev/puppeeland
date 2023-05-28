@@ -1683,7 +1683,7 @@ a.product__text {
 }
 
 
-.buy-now-button:before{
+.buy-now-button{
   font-weight: bold;
   background: #f2a842 !important; 
   border-color:#f2a842 !important; 
