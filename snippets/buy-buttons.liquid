@@ -101,8 +101,14 @@
             {{ form | payment_button }}
           {%- endif -%} 
           
+
+
+          <button type="submit" id="checkout" class="cart__checkout-button button" name="checkout" form="cart">
+            Check out
+          </button>
+          
           <button class="button button--primary button--full-width" name="checkout">
-            {{ 'sections.checkout' | t }}
+            {{ 'sections.cart.checkout' | t }}
           </button>
 
           <div class="cart-notification__links">
@@ -110,6 +116,7 @@
             <form action="{{ routes.cart_url }}" method="post" id="cart-notification-form">
               <button class="button button--primary button--full-width" name="checkout">
                 {{ 'sections.cart.checkout' | t }}
+                
               </button>
             </form>
           </div>
