@@ -162,9 +162,9 @@
   text-underline-offset: 0.3rem;
 }
 
-.shopify-payment-button__button + .shopify-payment-button__button--hidden {
+/* .shopify-payment-button__button + .shopify-payment-button__button--hidden {
   display: none;
-}
+} */
 
 /* Product form */
 
