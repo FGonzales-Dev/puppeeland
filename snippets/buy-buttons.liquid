@@ -105,13 +105,17 @@
        
       {%- endform -%}
      
-      
+      <form action="/cart/add" method="post" class="variants" id="product-actions-{{ product.id }}" enctype="multipart/form-data">
+        <input type="hidden" name="variantId" value="{{ product.variants[0].id }}" />
+        <button class="button btn-cart btn_theme" title="Buy" onClick="instantBuy()"><span>Buy</span></button>
+        </form>
+
     </product-form>
     <div class="cart-notification__links">
           
       <form action="{{ routes.cart_url }}" method="post">
         <button class="button button--primary button--full-width buy-now-button" >
-          {{  'sections.cart.checkout'  | "Buy Now"}}
+          {{  'sections.cart.checkout'  |t}}
 
         </button>
       </form>
@@ -175,20 +179,23 @@
 
 
   <script>
- function instantBuy(){
-  var $ = jQuery;
-
-var formParams = $('form.cart').serialize();
-  $.ajax({
-   url: "/cart/add",
-   type: "post",
-   data: formParams,
-   success: function(){ 
-    window.location.href = "/checkout";
-   },
-   error: function(){
-   }
-  })
-}
+    function instantBuy(){
+      var $ = jQuery;
+      var formParams = $('form.cart').serialize();
+      $.ajax({
+       url: "/cart/add",
+       type: "post",
+       data: formParams,
+       success: function(){
+        window.location.href = "/checkout";
+       },
+       error: function(){
+       }
+      })
+     }
+ 
+     function addToCart(){
+      $('form.cart').submit();
+     }
 </script>
 </div>
