@@ -100,25 +100,22 @@
            {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
           {%- endif -%} 
+        </div>
+
+        <div class="cart-notification__links">
           
-
-
-        
-        
+          <form action="{{ routes.cart_url }}" method="post">
+            <button class="button button--primary button--full-width buy-now-button" >
+              {{ 'sections.cart.checkout' | t }}
+    
+            </button>
+          </form>
         </div>
       {%- endform -%}
      
 
     </product-form>
-    <div class="cart-notification__links">
-          
-      <form action="{{ routes.cart_url }}" method="post">
-        <button class="button button--primary button--full-width" >
-          {{ 'sections.cart.checkout' | t }}
-
-        </button>
-      </form>
-    </div>
+    
   {%- else -%}
     <div class="product-form">
       <div class="product-form__buttons form">
