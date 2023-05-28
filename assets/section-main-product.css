@@ -1681,3 +1681,9 @@ a.product__text {
     border: none;
   }
 }
+
+
+.buy-now-button{
+  background: #f2a842 !important; 
+  border-color:#f2a842 !important; 
+}
