@@ -1683,7 +1683,7 @@ a.product__text {
 }
 
 
-.buy-now-button{
+.buy-now-button:before{
   font-weight: bold;
   content: "Buy Now";
   background: #f2a842 !important; 
