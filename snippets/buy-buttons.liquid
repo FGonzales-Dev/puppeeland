@@ -106,11 +106,11 @@
        
       {%- endform -%}
 
-      <form action="/cart/add" method="post" class="variants" id="product-actions-{{ product.id }}" enctype="multipart/form-data">
-        <input type="hidden" name="variantId" value="{{ product.variants[0].id }}" />
-        <button class="button buynow-btn" title="Buy" onClick="instantBuy()"><span>Buy now</span></button>
-        </form>
-     
+      <form action="/cart" method="post" id="addToCart">
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" />
+        <input type="submit" value="GO" name="checkout" style="display: none;"  />
+        <a href="#" class="add-btn">Add Product</a>
+    </form>
 
     </product-form>
    
@@ -165,21 +165,20 @@
 
 
 
-  <script>
-    function instantBuy(){
-      var $ = jQuery;
- 
-    var formParams = $('form.cart').serialize();
-      $.ajax({
-       url: "/cart/add",
-       type: "post",
-       data: formParams,
-       success: function(){ 
-        window.location.href = "/checkout";
-       },
-       error: function(){
-       }
-      })
-  }
-  </script>
+  <script type="text/javascript">
+    $('.add-btn').on('click', function(e) {
+        var form = $('#addToCart');
+        e.preventDefault()
+
+        $.ajax({
+            type: 'POST',                             
+            url: '/cart/add.js',
+            dataType: 'json',                               
+            data: form.serialize(),
+            success: function(data) {
+                form.find('input[name="checkout"]').trigger('click');
+            }
+        });
+    })
+</script>
 </div>
