@@ -105,6 +105,11 @@
 
        
       {%- endform -%}
+
+      <form action="/cart/add" method="post" class="variants" id="product-actions-{{ product.id }}" enctype="multipart/form-data">
+        <input type="hidden" name="variantId" value="{{ product.variants[0].id }}" />
+        <button class="button buynow-btn" title="Buy" onClick="instantBuy()"><span>Buy now</span></button>
+        </form>
      
 
     </product-form>
@@ -159,73 +164,22 @@
   {%- endif -%}
 
 
-  <script type="text/javascript">
-    /*<![CDATA[*/
-    (function () {
-      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-      if (window.ShopifyBuy) {
-        if (window.ShopifyBuy.UI) {
-          ShopifyBuyInit();
-        } else {
-          loadScript();
-        }
-      } else {
-        loadScript();
-      }
-      function loadScript() {
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = scriptURL;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-        script.onload = ShopifyBuyInit;
-      }
-      function ShopifyBuyInit() {
-        var client = ShopifyBuy.buildClient({
-          domain: 'nl-store101.myshopify.com',
-          storefrontAccessToken: 'eae0173d68ebc53c1f37285fd885382b',
-        });
-        ShopifyBuy.UI.onReady(client).then(function (ui) {
-          ui.createComponent('product', {
-            id: '6716991996066',
-              variantId: '39791283962018',
-            node: document.getElementById('product-component-1685340496394'),
-            moneyFormat: '%24%7B%7Bamount%7D%7D',
-            options: {
-      "product": {
-        "styles": {
-          "button": {
-            "color": "#000000",
-            ":hover": {
-              "color": "#000000",
-              "background-color": "#f2a842"
-            },
-            "background-color": "#f2a842",
-            ":focus": {
-              "background-color": "#f2a842"
-            },
-            "border-radius": "27px",
-            "padding-left": "100px",
-            "padding-right": "100px"
-            "width": "100%";
-          }
-        },
-        "buttonDestination": "checkout",
-        "contents": {
-          "img": false,
-          "title": false,
-          "price": false,
-          "options": false
-        },
-        "text": {
-          "button": "Buy now"
-        },
-        "variantId": "39791283962018"
-      }
-    },
-          });
-        });
-      }
-    })();
-    /*]]>*/
-    </script>
+
+  <script>
+    function instantBuy(){
+      var $ = jQuery;
+ 
+    var formParams = $('form.cart').serialize();
+      $.ajax({
+       url: "/cart/add",
+       type: "post",
+       data: formParams,
+       success: function(){ 
+        window.location.href = "/checkout";
+       },
+       error: function(){
+       }
+      })
+  }
+  </script>
 </div>
