@@ -107,7 +107,7 @@
  
 
     </product-form>
-    <div id='product-component-1685339769708'></div>
+    <div id='product-component-1685340312920'></div>
     <div class="cart-notification__links">
           
       <form action="{{ routes.cart_url }}" method="post">
@@ -198,11 +198,18 @@
         ShopifyBuy.UI.onReady(client).then(function (ui) {
           ui.createComponent('product', {
             id: '6716991996066',
-            node: document.getElementById('product-component-1685339769708'),
+            node: document.getElementById('product-component-1685340312920'),
             moneyFormat: '%24%7B%7Bamount%7D%7D',
             options: {
       "product": {
         "styles": {
+          "product": {
+            "@media (min-width: 601px)": {
+              "max-width": "calc(25% - 20px)",
+              "margin-left": "20px",
+              "margin-bottom": "50px"
+            }
+          },
           "button": {
             "color": "#000000",
             ":hover": {
@@ -214,22 +221,64 @@
               "background-color": "#b96025"
             },
             "border-radius": "27px",
-            "padding-left": "136px",
-            "padding-right": "136px"
+            "padding-left": "100px",
+            "padding-right": "100px"
           }
         },
         "buttonDestination": "checkout",
-        "layout": "horizontal",
         "contents": {
           "img": false,
-          "imgWithCarousel": true,
-          "description": true
+          "title": false,
+          "price": false
         },
-        "width": "100%",
         "text": {
           "button": "Buy now"
         }
       },
+      "productSet": {
+        "styles": {
+          "products": {
+            "@media (min-width: 601px)": {
+              "margin-left": "-20px"
+            }
+          }
+        }
+      },
+      "modalProduct": {
+        "contents": {
+          "img": false,
+          "imgWithCarousel": true,
+          "button": false,
+          "buttonWithQuantity": true
+        },
+        "styles": {
+          "product": {
+            "@media (min-width: 601px)": {
+              "max-width": "100%",
+              "margin-left": "0px",
+              "margin-bottom": "0px"
+            }
+          },
+          "button": {
+            "color": "#000000",
+            ":hover": {
+              "color": "#000000",
+              "background-color": "#b96025"
+            },
+            "background-color": "#ce6b29",
+            ":focus": {
+              "background-color": "#b96025"
+            },
+            "border-radius": "27px",
+            "padding-left": "100px",
+            "padding-right": "100px"
+          }
+        },
+        "text": {
+          "button": "Add to cart"
+        }
+      },
+      "option": {},
       "cart": {
         "styles": {
           "button": {
