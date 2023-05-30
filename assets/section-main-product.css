@@ -137,7 +137,9 @@
   box-shadow:none;
 }
 
-
+.shopify-payment-button__more-options:hover {
+  text-decoration: none;
+}
 
 .shopify-payment-button__more-options {
   background: green;
