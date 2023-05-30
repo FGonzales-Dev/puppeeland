@@ -141,22 +141,18 @@
   text-decoration: none;
 }
 
-
-button.shopify-payment-button__more-options {
-  content: "hello world";
-}
-.shopify-payment-button__more-options {
+.buy-now-btn {
   background: red;
   margin: 1.6rem 0 1rem;
   font-size: 1.2rem;
   line-height: calc(1 + .5 / var(--font-body-scale));
   letter-spacing: .05rem;
-  text-decoration: none;
-
-  text-underline-offset: 0.3rem;
   min-height: calc(4.5rem + var(--buttons-border-width) * 2);
 }
 
+button.shopify-payment-button__more-options {
+  content: "hello world";
+}
 
 
 /* .shopify-payment-button__button + .shopify-payment-button__button--hidden {
