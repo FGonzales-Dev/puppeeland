@@ -137,7 +137,7 @@
   box-shadow:none;
 }
 
-.shopify-payment-button__more-options:hover {
+.shopify-payment-button__more-options:hover:not([disabled]){
   text-decoration: none;
 }
 
