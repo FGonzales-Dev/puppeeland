@@ -142,7 +142,7 @@
 }
 
 
-button.shopify-payment-button__more-options::after {
+button.shopify-payment-button__more-options {
   content: "hello world";
 }
 .shopify-payment-button__more-options {
