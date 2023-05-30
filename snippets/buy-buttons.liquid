@@ -105,7 +105,11 @@
 
        
       {%- endform -%}
-
+   <form action="{{ routes.cart_url }}" method="post" id="cart-notification-form">
+      <button class="button button--primary button--full-width buy-now-btn" name="checkout">
+        Buy Now
+      </button>
+    </form>
     </product-form>
     <form action="{{ routes.cart_url }}" method="post" id="cart-notification-form">
       <button class="button button--primary button--full-width buy-now-btn" name="checkout">
