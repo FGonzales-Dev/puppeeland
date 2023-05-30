@@ -141,6 +141,10 @@
   text-decoration: none;
 }
 
+
+button.shopify-payment-button__more-options::after {
+  content: "hello world";
+}
 .shopify-payment-button__more-options {
   background: red;
   margin: 1.6rem 0 1rem;
@@ -148,7 +152,7 @@
   line-height: calc(1 + .5 / var(--font-body-scale));
   letter-spacing: .05rem;
   text-decoration: none;
-  content: "hello world";
+
   text-underline-offset: 0.3rem;
   min-height: calc(4.5rem + var(--buttons-border-width) * 2);
 }
