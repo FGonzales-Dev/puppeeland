@@ -146,7 +146,6 @@
     content: "Buy Now";
     font-weight: 700;
     font-size: 14px !important;
-    content: "Buy Now";
   background: #f2a842 !important; 
   border-color:#f2a842 !important; 
   margin: 1.6rem 0 1rem;
@@ -1675,9 +1674,18 @@ a.product__text {
 }
 
 
-.buy-now-button{
-  font-weight: bold;
+.buy-now-btn {
+  color: #000;
+    content: "Buy Now";
+    font-weight: 700;
+    font-size: 14px !important;
+    content: "Buy Now";
   background: #f2a842 !important; 
   border-color:#f2a842 !important; 
+  margin: 1.6rem 0 1rem;
+  font-size: 1.2rem;
+  line-height: calc(1 + .5 / var(--font-body-scale));
+  letter-spacing: .05rem;
+  min-height: calc(4.5rem + var(--buttons-border-width) * 2);
 }
 
