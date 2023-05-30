@@ -145,6 +145,7 @@
   color: #000;
     content: "Buy Now";
     font-weight: 700;
+    font-size: 14px !important;
   background: #f2a842 !important; 
   border-color:#f2a842 !important; 
   margin: 1.6rem 0 1rem;
