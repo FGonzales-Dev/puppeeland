@@ -102,8 +102,9 @@
          {% comment %} {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
           {%- endif -%}  {% endcomment %}
-          <input name="return_to" value="/checkout"/> 
+         
           <form action="{{ routes.cart_url }}" method="post" id="cart-notification-form">
+            <input name="return_to" value="/checkout"/> 
             <button class="button button--primary button--full-width buy-now-btn" name="checkout">
               Buy Now
             </button>
