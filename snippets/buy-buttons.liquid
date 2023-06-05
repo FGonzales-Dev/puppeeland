@@ -98,18 +98,9 @@
             </div>
           </button>
 
-          <div id='product-component-1685999694180'></div>
          {% comment %} {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
           {%- endif -%}  {% endcomment %}
-         
-          <form action="{{ routes.cart_url }}" method="post" id="cart-notification-form">
-        
-            <button class="button button--primary button--full-width buy-now-btn" name="checkout">
-              Buy Now
-            </button>
-          </form>
-       
         </div>
 
        
@@ -131,7 +122,7 @@
           {{ 'sections.cart.checkout' | t }}
         </button>
       </form>
-      <button type="button" class="link button-label">{{ 'general.continue_shopping' | t }}</button>
+  
     </div>
 
   {%- else -%}
