@@ -104,7 +104,7 @@
           {%- endif -%}  {% endcomment %}
          
           <form action="{{ routes.cart_url }}" method="post" id="cart-notification-form">
-            <input name="return_to" value="/checkout"/> 
+        
             <button class="button button--primary button--full-width buy-now-btn" name="checkout">
               Buy Now
             </button>
@@ -127,6 +127,7 @@
       >{{ 'general.cart.view_empty_cart' | t }}</a>
       <form action="{{ routes.cart_url }}" method="post" id="cart-notification-form">
         <button class="button button--primary button--full-width" name="checkout">
+          <input name="return_to" value="/checkout"/> 
           {{ 'sections.cart.checkout' | t }}
         </button>
       </form>
