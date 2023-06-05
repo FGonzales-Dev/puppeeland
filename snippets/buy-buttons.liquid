@@ -79,6 +79,7 @@
             {% endif %}
           >
             <span>
+              <input type="hidden" name="return_to" value="/checkout/" />
               {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
                 {{ 'products.product.sold_out' | t }}
               {%- else -%}
