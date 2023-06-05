@@ -1689,3 +1689,6 @@ a.product__text {
   min-height: calc(4.5rem + var(--buttons-border-width) * 2);
 }
 
+.shopify-buy-frame .shopify-buy-frame--product .shopify-buy__layout-vertical {
+  max-width: 100%;
+}
