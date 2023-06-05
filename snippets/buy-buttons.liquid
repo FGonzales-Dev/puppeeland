@@ -98,15 +98,17 @@
             </div>
           </button>
 
-          <div class="" id='product-component-1685999694180'></div>
+          <div id='product-component-1685999694180'></div>
          {% comment %} {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
           {%- endif -%}  {% endcomment %}
+          <input name="return_to" value="/checkout"/> 
           <form action="{{ routes.cart_url }}" method="post" id="cart-notification-form">
             <button class="button button--primary button--full-width buy-now-btn" name="checkout">
               Buy Now
             </button>
           </form>
+       
         </div>
 
        
