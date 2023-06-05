@@ -109,7 +109,11 @@
 
     </product-form>
 
-
+    <button class="button button--primary button--full-width" name="checkout">
+      <input name="return_to" value="/checkout"/> 
+      {{ 'sections.cart.checkout' | t }}
+    </button>
+    
     <div class="cart-notification__links">
       <a
         href="{{ routes.cart_url }}"
@@ -117,10 +121,7 @@
         class="button button--secondary button--full-width"
       >{{ 'general.cart.view_empty_cart' | t }}</a>
       <form action="{{ routes.cart_url }}" method="post" id="cart-notification-form">
-        <button class="button button--primary button--full-width" name="checkout">
-          <input name="return_to" value="/checkout"/> 
-          {{ 'sections.cart.checkout' | t }}
-        </button>
+        
       </form>
   
     </div>
