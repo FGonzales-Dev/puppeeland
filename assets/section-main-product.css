@@ -155,10 +155,6 @@
   min-height: calc(4.5rem + var(--buttons-border-width) * 2);
 }
 
-button.shopify-payment-button__more-options {
-  content: "hello world";
-}
-
 
 /* .shopify-payment-button__button + .shopify-payment-button__button--hidden {
   display: none;
@@ -1710,11 +1706,6 @@ button.shopify-payment-button__more-options {
   max-width: 100%;
 }
 
-.shopify-payment-button__more-options .BUz42FHpSPncCPJ4Pr_f:hover {
-  content: "Buy Now";
-
-}
-
-.shopify-payment-button__more-options:hover:not([disabled]){
-  content: "Buy Now";
+.shopify-payment-button__more-options:hover:not([disabled]) {
+  font-size: 0;
 }
