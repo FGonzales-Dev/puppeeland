@@ -1691,16 +1691,15 @@ a.product__text {
 
 
 
-button.shopify-payment-button__more-options::after {
+button.shopify-payment-button__more-options .BUz42FHpSPncCPJ4Pr_f::after {
   content: 'JETZT ZUR KASSE';
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
   z-index: 1;
-
   display: flex;
   justify-content: center;
   align-items: center;
-  background:red;
+  background:green;
 }
