@@ -1691,7 +1691,7 @@ a.product__text {
 
 
 
-button.shopify-payment-button__more-options::after {
+button.shopify-payment-button__more-options {
   color: #000;
     content: "Buy Now";
     font-weight: 700;
