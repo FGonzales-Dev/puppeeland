@@ -99,13 +99,8 @@
             </div>
           </button>
 
-          {%- if show_dynamic_checkout -%}
-          
-            <button
-
-            >
-              {{ form | payment_button }}
-            </button>
+        {%- if show_dynamic_checkout -%}
+            {{ form | payment_button }}
           {%- endif -%} 
         </div>
 
