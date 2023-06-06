@@ -1693,7 +1693,7 @@ a.product__text {
 
 button.shopify-payment-button__more-options {
   color: #000;
-    content: "Buy Now";
+
     font-weight: 700;
     font-size: 14px !important;
     content: "Buy Now";
@@ -1708,4 +1708,9 @@ button.shopify-payment-button__more-options {
 
 .shopify-buy-frame .shopify-buy-frame--product .shopify-buy__layout-vertical {
   max-width: 100%;
+}
+
+.shopify-payment-button__more-options .BUz42FHpSPncCPJ4Pr_f {
+  content: "Buy Now";
+
 }
