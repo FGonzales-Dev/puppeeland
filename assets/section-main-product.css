@@ -1691,7 +1691,7 @@ a.product__text {
 
 
 
-button.shopify-payment-button__more-options .BUz42FHpSPncCPJ4Pr_f::after {
+button.shopify-payment-button__more-options::after {
   content: 'JETZT ZUR KASSE';
   position: absolute;
   left: 50%;
