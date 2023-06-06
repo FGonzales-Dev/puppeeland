@@ -1710,7 +1710,7 @@ button.shopify-payment-button__more-options {
   max-width: 100%;
 }
 
-.shopify-payment-button__more-options .BUz42FHpSPncCPJ4Pr_f {
+.shopify-payment-button__more-options .BUz42FHpSPncCPJ4Pr_f:hover {
   content: "Buy Now";
 
 }
