@@ -1701,5 +1701,6 @@ button.shopify-payment-button__more-options::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  background:red;
+  background: #f2a842 !important; 
+  border-color:#f2a842 !important; 
 }
