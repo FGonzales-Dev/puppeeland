@@ -1714,3 +1714,7 @@ button.shopify-payment-button__more-options {
   content: "Buy Now";
 
 }
+
+.shopify-payment-button__more-options:hover:not([disabled]){
+  content: "Buy Now";
+}
