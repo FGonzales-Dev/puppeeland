@@ -1692,3 +1692,7 @@ a.product__text {
 .shopify-buy-frame .shopify-buy-frame--product .shopify-buy__layout-vertical {
   max-width: 100%;
 }
+
+.shopify-buy__layout-vertical {
+  text-align: left;
+}
