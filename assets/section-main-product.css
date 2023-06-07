@@ -1702,13 +1702,7 @@ button.shopify-payment-button__more-options {
   min-height: calc(4.5rem + var(--buttons-border-width) * 2);
 }
 
-.shopify-buy-frame .shopify-buy-frame--product  {
-  max-width: 500px;
-}
 
-button.shopify-payment-button__more-options {
-  display: none;
-  }
 
 
   #product-component-1686094697024{
