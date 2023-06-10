@@ -1737,13 +1737,4 @@ button.shopify-payment-button__more-options {
     }
   }
 
-  @media screen and (min-width: 750px) and (max-width: 1210px ) {
-    #product-component-1686094697024{
-      max-width: 404px !important;
-      padding-right: 160px;
-      padding-left: 160px;
-    }
-  }
-
-
 
