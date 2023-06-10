@@ -1717,13 +1717,13 @@ button.shopify-payment-button__more-options {
 
 
 
-  /* @media screen and (min-width: 750px) {
+  @media screen and (min-width: 601px) {
     #product-component-1686094697024{
 
       padding-left: 50px;
-      padding-right: 189px;
+      padding-right: 50px;
       
     
       
     }
-  } */
+  }
