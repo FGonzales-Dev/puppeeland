@@ -1706,7 +1706,8 @@ button.shopify-payment-button__more-options {
 
 
   #product-component-1686094697024{
-    max-width: 500px !important;
+    /* max-width: 500px !important; */
+    display: inline-block;
     /* display: block !important;
     line-height: calc(1 + .5 / var(--font-body-scale)) !important;
     letter-spacing: .05rem;
