@@ -539,7 +539,7 @@ a.product__text {
 }
 
 .product-form__buttons {
-  max-width: 45rem;
+  max-width: 44rem;
 }
 
 .product--no-media .product__info-container > modal-opener {
@@ -1711,8 +1711,6 @@ button.shopify-payment-button__more-options {
     line-height: calc(1 + .5 / var(--font-body-scale)) !important;
     letter-spacing: .05rem;
     min-height: calc(4.5rem + var(--buttons-border-width) * 2) !important;
-    font-size: 1.2rem;
-    font-weight: 700;
   }
 
   
