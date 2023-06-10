@@ -1714,6 +1714,16 @@ button.shopify-payment-button__more-options {
     min-height: calc(4.5rem + var(--buttons-border-width) * 2) !important;
   }
 
-  .shopify-buy__btn{
-    font-weight: 700;
+
+
+
+  @media screen and (min-width: 750px) {
+    #product-component-1686094697024{
+
+      padding-left: 50px;
+      padding-right: 50px;
+      
+    
+      
+    }
   }
