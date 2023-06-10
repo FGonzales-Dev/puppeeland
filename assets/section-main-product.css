@@ -1715,15 +1715,15 @@ button.shopify-payment-button__more-options {
   }
 
 
-  @media screen and (min-width: 529px) and (max-width: 600px) {
+  @media screen and (max-width: 529px) {
     #product-component-1686094697024{
       max-width: 500px !important;
-      padding-right: 45px;
+      padding-right: 0px;
     
     }
   }
 
-  @media screen and (max-width: 601px) {
+  @media screen and (min-width: 530px) and (max-width: 601px) {
     #product-component-1686094697024{
       max-width: 500px !important;
       padding-right: 55px;
