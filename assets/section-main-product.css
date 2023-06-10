@@ -1717,7 +1717,7 @@ button.shopify-payment-button__more-options {
 
 
 
-  @media screen and (min-width: 601px) {
+  @media screen and (max-width: 601px) {
     #product-component-1686094697024{
 
       padding-left: 50px;
