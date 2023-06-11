@@ -1733,7 +1733,11 @@ button.shopify-payment-button__more-options {
   
   @media screen and (min-width: 602px) and (max-width: 749px ) {
     #product-component-1686094697024{
-      max-width:  calc(4.5rem + var(--buttons-border-width) * 2);
+      max-width: 350px !important;
+    }
+
+    .product-form__buttons {
+      max-width: 350px !important;
     }
   }
 
